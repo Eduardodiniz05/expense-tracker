@@ -8,7 +8,12 @@ const App = () => {
            <C.HeaderText>Sistema Financeiro</C.HeaderText>
         </C.Header>
         <C.Body>
-          ...
+          {/* Área de informações */}
+
+          {/* Área de inserção */}
+
+          {/* Tabela de Itens */}
+
         </C.Body>
     </C.Container>
   )

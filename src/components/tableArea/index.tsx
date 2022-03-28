@@ -1,7 +1,11 @@
 import * as C from './style'
+import {Item} from '../../types/Item'
 
+type Props = {
+    list: Item[]
+}
 
-export const TableArea = () =>  {
+export const TableArea = ({ list}: Props) =>  {
     return (
         <C.Table>
             <thead>
@@ -13,6 +17,14 @@ export const TableArea = () =>  {
                 </tr>
             </thead>
             <tbody>
+                {list.map((items, index) => (
+                    <tr key={index}>
+                        <td></td>
+                        <td></td>
+                        <td> {items.title} </td>
+                        <td></td>
+                    </tr>
+                ))}
 
             </tbody>
         </C.Table>

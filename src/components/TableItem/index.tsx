@@ -15,6 +15,7 @@ export const TableItem = ({item}: Props) => {
             <C.TableColumn>{categories[item.category].title}</C.TableColumn>
             <C.TableColumn>{item.title}</C.TableColumn>
             <C.TableColumn> R$ {item.value}</C.TableColumn>
+            
         </C.TableLine>
     );
 }

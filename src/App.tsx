@@ -7,6 +7,7 @@ import {items} from './data/Items';
 import {getCurrentMonth, filterListByMonth } from './helpers/dateFilter'
 import { TableArea } from './components/TableArea';
 import { InfoArea } from './components/InfoArea';
+import { AddArea } from './components/AddArea'
 
 
 
@@ -56,8 +57,8 @@ const App = () => {
           income={income}
           expense={expense}
           />
-
-          {/* Área de inserção */}
+          
+          <AddArea />
 
           <TableArea list={filteredList} />
 
